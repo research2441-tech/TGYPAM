@@ -1,0 +1,23 @@
+seed: 42
+data_path: agriculture.csv
+output_prefix: tgypam_run
+time_column: timestamp
+crop_column: crop
+entity_column: field_id
+targets: [growth, yield_t_ha, profit_usd_ha]
+resource_columns: [water_mm, fertilizer_kg_ha]
+features: [temperature_c, humidity_pct, rainfall_mm, soil_ph, soil_n, soil_p, soil_k, irrigation_mm, soil_moisture_pct, sunlight_hours, wind_kmh, field_area_ha, market_price_usd_t, input_cost_usd_ha]
+sequence_length: 6
+split_train: 0.65
+split_val: 0.15
+hidden_dim: 48
+layers: 1
+dropout: 0.1
+batch_size: 128
+epochs: 16
+patience: 4
+learning_rate: 0.001
+weight_decay: 0.0001
+loss_weights: [1.0, 1.0, 1.0]
+pss_weights: [0.3333333333, 0.3333333333, 0.3333333334]
+benchmark_sizes: [300000, 500000, 1000000]

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: Please cite the associated manuscript and the repository commit used.
+title: TGYPAM Crop Growth Yield Profit Analysis Reproduction Code
+authors:
+  - family-names: Thangakrishnan
+    given-names: Suresh
+  - family-names: Balamurugan
+    given-names: P.
+  - family-names: Arulkumaran
+    given-names: G.
+version: 0.0.1
